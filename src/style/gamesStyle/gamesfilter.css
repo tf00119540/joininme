@@ -1,0 +1,137 @@
+.buttonFilterMore {
+  position: fixed;
+  top: 40px;
+  left: 820px;
+  z-index: 999;
+  width: 100px;
+}
+
+.buttonFilterMore:hover {
+  color: rgba(208, 27, 27, 0.6);
+}
+
+/* 進階篩選按鈕 */
+.filterBlockoff {
+  display: none;
+}
+
+/* ---start--- */
+.gamesFilterMain {
+  position: relative;
+}
+
+.filterBlock {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  padding: 100px 0px 0px 120px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.filterBlockSecond {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0px 20px;
+}
+
+.filterBlockSecond ul {
+  display: flex;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+}
+
+.filterBlockSecond ul li {
+  color: gray;
+  border: 1px solid gray;
+  margin: 0px 10px 20px 0px;
+  padding: 5px;
+}
+
+.filterBlockSecond ul li:hover {
+  color: gray;
+  border: 1px solid red;
+}
+
+.filterBtnMain {
+  display: flex;
+}
+
+.filterBtn {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.filterBtnFirst {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.filterBtnFirst p {
+  margin: 0;
+  width: 32px;
+}
+
+/* 返回遊戲主頁按鈕 */
+.rolBack {
+  position: fixed;
+  top: 40px;
+  left: 150px;
+  z-index: 999;
+  width: 60px;
+  padding: 0;
+}
+
+.rolBack div {
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+/* ---遊戲清單--- */
+.gamesFilterSection {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding: 10px 70px 10px 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+
+  border: 1px solid red;
+}
+
+.gamesFilterSection > div {
+  width: 315px;
+  height: 250px;
+  margin: 0px 26px 26px 0px;
+
+  border: 1px solid orange;
+}
+
+.gamesFilterSection figure{
+  width: 100%;
+  height: 145px;
+  margin: 0;
+}
+
+.gamesFilterSection img {
+  object-fit: cover;
+  object-position: center center;
+  /* background-size:auto over; */
+} 
+
+@media (max-width: 1480px){
+  .gamesFilterSection{
+    justify-content:center ;
+    padding: 10px 0px 0px 10px;
+  }  
+
+}

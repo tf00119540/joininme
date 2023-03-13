@@ -1,0 +1,330 @@
+.headerId {
+  height: 96px;
+  display: flex;
+  position: relative;
+  background-color: black;
+  z-index: 11;
+  caret-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+.navbar ul a {
+  color: white;
+}
+
+/* navbar>member */
+.memberMain {
+  position: fixed;
+  top: 86px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.member_click {
+  font-family: "Jost-Regular";
+  border-radius: 20px;
+  z-index: 2;
+  position: fixed;
+  right: 35px;
+  transition: 0.4s;
+}
+
+.member_none {
+  border-radius: 20px;
+  position: fixed;
+  right: 35px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.memberOnon {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 13px;
+  margin-left: 10px;
+  font-size: 18px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.memberOffoff {
+  display: none;
+}
+
+.memberLi:first-child {
+  padding-top: 45px;
+}
+
+.memberLi:last-child {
+  padding: 20px 0px 10px;
+}
+
+.memberLi a {
+  font-family: "Jost-Regular";
+  color: black;
+}
+
+.memberLi a:hover {
+  color: #d01b1b;
+}
+
+.memberBtn {
+  position: fixed;
+  top: 25px;
+  right: 60px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.memberImg {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* navbar主要選單 */
+
+link {
+  color: white;
+}
+
+.menuMain {
+  display: flex;
+  position: fixed;
+  right: 250px;
+  top: 10px;
+}
+
+.menu {
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  border: 1px white solid;
+  font-family: "Jost-Regular";
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
+  margin-right: 90px;
+  height: 30px;
+  position: fixed;
+  z-index: 3;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  border: 1px white solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
+  margin-right: 90px;
+  height: 30px;
+  position: fixed;
+  z-index: 3;
+  list-style-type: none;
+  text-decoration: none;
+}
+.menu_active:hover {
+  color: white;
+  background-color: #d01b1b;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
+  margin-right: 90px;
+  height: 30px;
+  position: fixed;
+  z-index: 3;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu_active {
+  color: white;
+  background-color: #d01b1b;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  border: 1px #d01b1b solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
+  margin-right: 90px;
+  height: 30px;
+  position: fixed;
+  font-family: "Jost-Regular";
+  z-index: 3;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu_click {
+  border: 1px white solid;
+  position: fixed;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 250px;
+  margin: 20px;
+  margin-right: 85px;
+  right: 35px;
+  transition: 0.3s;
+  z-index: 2;
+  opacity: 0.8;
+  font-family: "Jost-Regular";
+}
+
+.menuOnon {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px 0px;
+}
+
+.menuOffoff {
+  display: none;
+}
+
+.menu_none {
+  position: fixed;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 250px;
+  margin: 20px;
+  margin-right: 85px;
+  transition: 0.3s;
+  z-index: 2;
+  opacity: 0;
+  right: 35px;
+}
+
+.menu_link {
+  font-size: 20px;
+  font-family: "Jost-Regular";
+  margin: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.menu_link a {
+  color: black;
+  font-size: 20px;
+  font-family: "Jost-Regular";
+  margin: 10px;
+  text-align: center;
+  width: 150px;
+}
+.menu_link a:hover {
+  color: red;
+}
+
+.footerNavbarId {
+  display: none;
+}
+
+/* 手機版Navbar */
+@media (max-width: 420px) {
+  /* headBanner */
+  .headerId {
+    display: none;
+  }
+
+  .headBannerMain {
+    height: 96px;
+    padding: 10px 0px 20px;
+    background-color: black;
+  }
+
+  .headBannerBlank {
+    height: 100%;
+    position: relative;
+  }
+
+  .headBanner {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0 10px 0;
+    background: url(/public/Images/LOGO_horizontal.png) center center no-repeat;
+    background-size: contain;
+  }
+
+  /* footerNavbar */
+  .footerNavbarId {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    padding-top: 20px;
+    z-index: 10;
+  }
+
+  .footerNavbar {
+    height: 100%;
+  }
+
+  .footerNavbarUl {
+    height: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+
+  .footerNavbarUl > li {
+    flex: 1;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerNavbarUl a {
+    color: white;
+    font-size: 22px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .footerNavbarUl a:hover {
+    color: #d01b1b;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .footerNavbarUl p {
+    padding-top: 10px;
+  }
+
+  .blankDiv {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+  }
+}

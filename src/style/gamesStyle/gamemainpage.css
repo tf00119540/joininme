@@ -1,0 +1,131 @@
+/* 修改公版 */
+.headerId {
+  height: 0px;
+}
+
+/* games共同使用 */
+.gamesInputStyle {
+  font-family: Jost-Regular;
+  background-color: rgba(127, 127, 127, 0.75);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(127, 127, 127, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+  padding: 6px 16px;
+  border: none;
+}
+
+.gamesInputStyle:focus {
+  border: 1px solid rgba(204, 204, 204, 0.6);
+  outline: none;
+}
+
+.gamesNone {
+  background: none;
+  border: none;
+  caret-color: none;
+}
+
+.gamesNone:focus {
+  outline: none;
+}
+
+/* ---start--- */
+.gamesMain {
+  height: auto;
+  position: relative;
+  caret-color: transparent;
+  min-height: 100vh;
+}
+
+.gamesNavbar {
+  height: 96px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: sticky;
+  top: 0;
+}
+
+.gamesSearch {
+  position: fixed;
+  top: 40px;
+  left: 240px;
+  z-index: 999;
+  width: 240px;
+}
+
+.inputSearch {
+  text-align: start;
+  height: 28px;
+  caret-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+.inputSearch:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.buttonSearch {
+  height: 28px;
+  width: 42px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+}
+
+.buttonSearch span:first-child {
+  margin-right: 10px;
+}
+
+.buttonSearch span:last-child:hover {
+  color: rgba(208, 27, 27, 0.6);
+}
+
+.selectedCity {
+  position: fixed;
+  top: 40px;
+  left: 510px;
+  z-index: 999;
+  width: 150px;
+}
+
+.selectedPeople {
+  position: fixed;
+  top: 40px;
+  left: 690px;
+  z-index: 999;
+  width: 100px;
+}
+
+/* 手機版 */
+@media (max-width: 420px) {
+  .gamesNavbar {
+    position: relative;
+    height: 0px;
+  }
+
+  .gamesNavbarColor {
+    display: none;
+  }
+
+  .gamesSearch {
+    position: sticky;
+    top: 20px;
+    left: 68px;
+    margin-bottom: 20px;
+  }
+
+  .selectedCity {
+    display: none;
+  }
+
+  .selectedPeople {
+    display: none;
+  }
+
+  .buttonFilterMore {
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+
+.bodyContainer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  z-index: 10;
+}
+
+.leftContainer {
+  height: 100%;
+  width: 12%;
+  display: flex;
+  position: relative;
+}
+
+.leftContainer02 {
+  aspect-ratio: 7/2;
+  height: 100%;
+  width: 100px;
+  background: url(/public/Images/backgroundtext02.jpg) center center no-repeat;
+  background-size: cover;
+  position: fixed;
+  left: 60px;
+  top: 0px;
+}
+
+/* .leftContainer0202 {
+  height: 100%;
+  width: 40px;
+  position: fixed;
+  left: 120px;
+  background-color: rgba(5, 5, 5, 0.2);
+} */
+
+.mainContainer {
+  width: 88%;
+  z-index: 10;
+}
+
+.mainContainer p {
+  color: white;
+}
+
+.upupup {
+  position: fixed;
+  right: 8vw;
+  bottom: 15vh;
+}
+
+.upupup a img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+@media (max-width: 1480px) {
+  .leftContainer {
+    display: none;
+  }
+  .mainContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .bodyContainerr {
+    height: 100px;
+  }
+}

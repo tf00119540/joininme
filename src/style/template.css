@@ -1,0 +1,8 @@
+/* 基本公版 */
+@import url(./firstPlate.css);
+@import url(./navbar.css);
+@import url(./footer.css);
+@import url(./fontstyle.css);
+
+@import url(./gamesStyle/gamemainpage.css);
+@import url(./gamesStyle/gamesfilter.css);

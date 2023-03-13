@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Jost-Italic;
+  src: url("../fontstyle/Jost-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Jost-Regular;
+  src: url("../fontstyle/Jost-Regular.ttf");
+}
